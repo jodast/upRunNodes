@@ -1,0 +1,74 @@
+[
+  {
+    "id": "0001",
+    "url": "http://localhost:8082",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0021",
+    "url": "http://eth-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0005",
+    "url": "http://fuse-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0040",
+    "url": "http://harmony-0",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0044",
+    "url": "http://iotex-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0009",
+    "url": "http://poly-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0027",
+    "url": "http://poa-xdai",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0004",
+    "url": "http://bsc-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  },
+  {
+    "id": "0003",
+    "url": "http://avax-mainnet",
+    "basic_auth": {
+      "username": "",
+      "password": ""
+    }
+  }
+]
