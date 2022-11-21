@@ -21,7 +21,7 @@ docker run \
   -e POCKET_CORE_GENESIS=/home/app/.pocket/config/genesis.json \
   -e POCKET_CORE_CHAINS=/home/app/.pocket/config/chains.json \
   -e POCKET_CORE_CONFIG=/home/app/.pocket/config/config.json \
-  -v "$(pwd)"/config:/home/app/.pocket/config \
+  -v "$(pwd)"/config:/home/app/.pocket/config:rw \
   pocket-core:ethereal-wombat
 #   start --mainnet
 ```
