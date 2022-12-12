@@ -9,5 +9,16 @@
       "type": "tendermint/PrivKeyEd25519",
       "value": "LdcUeovrp9BxtpwmPVLfuzQLfWB81DCJRQElpIY9vnjhzHQFvu5t5cbT07wLlGBwHpkyomcSSl3YtGuMGFfe2A=="
     }
+  },
+  {
+    "address": "F7F9351A6675B42B87DB92BE97DE067D6B4463F0",
+    "pub_key": {
+      "type": "tendermint/PubKeyEd25519",
+      "value": "cuOeCeW50SzCUcyUuumYqky24jA+lz3uzbVj03HoKTA="
+    },
+    "priv_key": {
+      "type": "tendermint/PrivKeyEd25519",
+      "value": "3/jKBZuMfFn78Qs45AycfqAVr0DqSezNxCRTPtxeEapy454J5bnRLMJRzJS66ZiqTLbiMD6XPe7NtWPTcegpMA=="
+    }
   }
 ]

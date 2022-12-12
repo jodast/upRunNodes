@@ -1,3 +1,4 @@
 lean_nodes_keys.json
 pocket*db/
 data/
+write-file-atomic*
