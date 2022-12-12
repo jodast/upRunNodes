@@ -32,9 +32,6 @@ WORKDIR $POCKET_PATH
 # Creating the BRANCH_NAME variable
 ARG BRANCH_NAME="staging"
 
-# Copying deps sh to tmp folder
-COPY deps.sh /tmp/
-
 # Clone the repository
 RUN git clone --branch ${BRANCH_NAME} https://github.com/pokt-network/pocket-core.git ${POCKET_PATH}
 
@@ -54,12 +51,13 @@ FROM alpine
 
 COPY --from=builder /bin/pocket /bin/pocket
 COPY entrypoint.sh /tmp/
-RUN apk add --update --no-cache expect bash leveldb-dev
-RUN apk add --no-cache tzdata jq vim && cp /usr/share/zoneinfo/America/New_York  /etc/localtime
+RUN apk add --update --no-cache expect bash leveldb-dev tzdata jq vim
+RUN cp /usr/share/zoneinfo/Europe/Zurich  /etc/localtime
 # Create app user and add permissions
-RUN addgroup --gid 1001 -S app \
-	&& adduser --uid 1005 -S -G app app
-RUN mv /tmp/entrypoint.sh /home/app/ && chown -R app /bin/pocket  && mkdir -p /home/app/.pocket/config && chown -R app /home/app/.pocket
+RUN addgroup --gid 1001 -S app 
+RUN adduser --uid 1005 -S -G app app
+COPY /tmp/entrypoint.sh /home/app/
+RUN chown -R app /bin/pocket  && mkdir -p /home/app/.pocket/config && chown -R app /home/app/.pocket
 
 USER app
 
